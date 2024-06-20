@@ -11,6 +11,7 @@ thread based time limit on input.
 |||timeout -> how long to wait?|
 |||prompt -> what to ask?|
 |||default -> what to sat when timeout happens?|
+|||action -> action callback to perform when timeout happens|
 ||get_input()|Function to be used as input reader|
 ||read()|Reads the input from the reader|
 |timed_input(timeout, prompt, default)|| Function for reading timed input, arguments same as above|

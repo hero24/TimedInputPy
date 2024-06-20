@@ -2,7 +2,7 @@
 from distutils.core import setup
 args = {
     'name': 'TimedInputPy',
-    'version': '0.9',
+    'version': '1.0',
     'description': 'A library for handling timeout inputs',
     'python_requires': '>=3.0',
     'packages': ['TimedInputPy']

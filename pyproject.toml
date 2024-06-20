@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "TimedInputPy"
-version = "0.9"
+version = "1.0.1"
 authors = [
   { name="hero24", email="hero24@interia.pl" },
-  { name="xenova"}
+  { name="xenova", email="None@unknown.org"}
 ]
 description = "Implemenation of thread-based timed input object"
 readme = "README.md"
-requires-python = ">=3.5"
+requires-python = ">=3.0"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",

@@ -11,14 +11,16 @@ class TimedInput(Thread):
             print(self.prompt, end='', flush=True)
             self.input = input()
         except EOFError:
-            pass
+            if self.action:
+	        self.action()
 
-    def __init__(self, timeout, prompt='', default=None, *args, **kwargs):
+    def __init__(self, timeout, prompt='', default=None, action=None, *args, **kwargs):
         """
         TimedInput(
             timeout -> amount of seconds to wait for the input,
             prompt -> optionl prompt to display while asking for input,
             default -> string to return in case of timeout,
+            action -> action to perform when timeout fires,
             *args/**kwargs -> any additional arguments are passed down to Thread
                             constructor
         )
@@ -28,6 +30,7 @@ class TimedInput(Thread):
         self.timeout = timeout
         self.prompt = prompt
         self.input = default
+	self.action = action
         super().__init__(target=self.get_input, *args, **kwargs)
         self.daemon = True
 
