@@ -5,6 +5,6 @@ Available readers:
 TimedInput => A thread-based timeout wrapper around input function.
 """
 
-from .timed_input import TimedInput
-from .timed_input import timed_input
+from .TimedInputPy import TimedInput
+from .TimedInputPy import timed_input
 __all__ = ['TimedInput', 'timed_input']
