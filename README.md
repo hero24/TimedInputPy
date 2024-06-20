@@ -33,3 +33,7 @@ if __name__ == '__main__':
     s = TimedInput(test_timeout, test_prompt, test_default).read()
     print('Hello {}!'.format(s), flush=True)
 ```
+
+## Instalation
+Module can be installed using pip3:
+`pip3 install TimedInputPy`
